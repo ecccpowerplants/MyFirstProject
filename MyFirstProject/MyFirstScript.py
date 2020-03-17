@@ -9,3 +9,9 @@ def concat_func(boi1, boi2):
 	for b1, b2 in zip(boi1.flatten(), boi2.flatten()):
 		c.append(b1 + b2)
 	return np.array(c)
+
+def arrow(x, n):
+	y = x
+	for i in range(n):
+		y = x ** y
+	return y
